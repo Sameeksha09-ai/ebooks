@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-position: center;
+                } 
+            .containerout 
+            {
+                padding: 10px;
+                width: fit-content;
+                height: fit-content;
+                margin-top: 10px;
+                display:flex;
+                position: fixed;
+            }
+            .containerin{
+                width:200px;
+                padding: 70px;
+                margin-left: 50px;
+                margin-top: 10px;
+                height: fit-content;
+            }
+        
+            label{
+                font-weight: bold;
+                color:white;
+                margin-left: 550px;
+                font-size: 50px;
+                position: fixed;
+            }
+            a{
+                text-decoration: none;
+                font-size: 33px;
+                font-weight: bold;
+                color:rgb(111, 200, 241);
+            }
+            button{
+                width:170px;
+                height:44px;
+                border-radius: 16px;
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 25px;
+                border: none;
+                cursor: pointer;
+                background-color:white;
+                color: rgb(56, 131, 165);
+            }
+            button:hover{
+                background-color: rgb(178, 218, 235);
+            }
+            .courses {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 200px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            }
+            .courses li {
+                color: black;
+                padding: 5px 7px;
+                text-decoration: none;
+                display: block;
+                list-style: none;
+                background-color:white;
+                border: 1px solid white;
+            }
+            .courses li a {
+                text-decoration: none;
+                color:black;
+                display: block;
+                padding: 5px;
+                font-size: 20px;
+            }
+            .courses li:hover {
+                background-color:  rgb(102, 159, 205);
+                color: white;
+            }
+            *{
+                font-family: monospace;
+            }
+        </style>
+        <title>ACADEMIC YEAR</title>
+    </head>
+    <body>
+        <div class="containerout">
+            <label for="year"></label><br>
+            <div class="containerin">
+                <button type="button" onclick="show_list1()" class="containerout">I YEAR</button>
+                <button class="dropdown_button" onclick="show_list1()"></button>
+                    <div id="courses_id1" class="courses">
+                            <li><a href="">I SEM</a></li>
+                            <li><a href="">II SEM</a></li>
+                    </div>
+            </div>
+            <div class="containerin">
+                <button type="button" onclick="show_list2()" class="containerout">II YEAR</button>
+                <button class="dropdown_button" onclick="show_list2()"></button>
+                    <div id="courses_id2" class="courses">
+                        <li><a href="">III SEM</a></li>
+                        <li><a href="">IV SEM</a></li>
+                    </div>
+            </div>
+            <div class="containerin">
+                <button type="button" onclick="show_list3()" class="containerout">III YEAR</button>
+                <button class="dropdown_button" onclick="show_list3()"></button>
+                    <div id="courses_id3" class="courses">
+                        <li><a href="">V SEM</a></li>
+                        <li><a href="">VI SEM</a></li>
+                    </div>
+            </div>
+        </div>
+
+        <script>
+            function show_list1() {
+                var courses = document.getElementById("courses_id1");
+                if (courses.style.display == "block") {
+                    courses.style.display = "none";
+                } else {
+                    courses.style.display = "block";
+                }
+            }
+            function show_list2(){
+                var courses = document.getElementById("courses_id2");
+                if (courses.style.display == "block") {
+                    courses.style.display = "none";
+                } else {
+                    courses.style.display = "block";
+                }
+            }
+            function show_list3() {
+                var courses = document.getElementById("courses_id3");
+                if (courses.style.display == "block") {
+                    courses.style.display = "none";
+                } else {
+                    courses.style.display = "block";
+                }
+            }
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropdown_button')) {
+                    document.getElementById('courses_id')
+                        .style.display = "none";
+                }
+
+            }    
+            
+            
+        </script>
+    </body>
+</html>

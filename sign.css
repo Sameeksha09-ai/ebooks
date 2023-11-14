@@ -1,0 +1,54 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image:url(loginimg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+*{
+    box-sizing: border-box;
+    color: black; 
+    opacity: 100%; 
+  }
+  /* Add padding to container */
+  .container {
+  padding: 16px;
+  width: 30%;
+  height: fit-content;
+  margin-left: 600px;
+  opacity:1;
+  margin-top: 80px;
+  color: black;
+  backdrop-filter:blur(5px);
+  }
+  
+  /* Full-width input field */
+  .a1 {
+  width:90%;
+  padding:20px;
+  display: inline-block;
+  margin: 6px 0 6px 0;
+  background-color: white;
+  border-color: rgb(210, 233, 239);
+  height: 15px;
+  border-radius: 5px;
+  }
+  .registerbtn {
+     padding: 10px;
+     cursor: pointer;
+     width: 30%;
+     height: 35px;
+     margin-left: 30PX;
+     background-color: white;
+     border-color: rgb(210, 233, 239);
+     border-radius: 5px;
+    }
+  h1{
+  margin-left: 70px;
+  margin-bottom: 10px;
+  color: black;
+  font-size:40px ;
+  }
+  .btn{
+    background-color: aqua;
+    width: 30%;;
+  }
